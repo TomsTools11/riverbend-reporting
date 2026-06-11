@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverbend Insurance Agency — Performance Reviews</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#057BE5; --navy:#00172D; --navy-deep:#001020; --mint:#3BEECA;
+  --ink:#0F1B2D; --body:#2B3442; --muted:#6A7482;
+  --white:#fff; --gray:#EFF2F7; --line:#E2E8F0;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{-webkit-font-smoothing:antialiased;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--gray);color:var(--body);line-height:1.55;}
+.top{background:var(--navy);color:#cfe0ee;padding:22px 48px;display:flex;align-items:center;justify-content:space-between;}
+.top img{height:24px;}
+.top .r{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint);font-weight:700;}
+.wrap{max-width:980px;margin:0 auto;padding:56px 48px 80px;}
+.lead{max-width:720px;margin-bottom:40px;}
+.lead .eb{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);}
+.lead h1{font-size:38px;font-weight:900;letter-spacing:-.02em;color:var(--ink);line-height:1.08;margin:14px 0 14px;}
+.lead p{font-size:15.5px;color:var(--body);line-height:1.6;}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px 28px;box-shadow:0 4px 16px rgba(0,23,45,.06);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,23,45,.12);}
+.card .tag{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);}
+.card h3{font-size:20px;font-weight:800;color:var(--ink);margin:8px 0 8px;letter-spacing:-.01em;}
+.card p{font-size:13.5px;color:var(--muted);line-height:1.55;flex:1;margin-bottom:18px;}
+.card a.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:11px 18px;border-radius:9px;transition:background .15s;align-self:flex-start;}
+.card a.btn:hover{background:#0C6EC5;}
+.note{margin-top:42px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;max-width:720px;}
+@media(max-width:760px){ .grid{grid-template-columns:1fr;} .wrap{padding:40px 24px 60px;} .top{padding:20px 24px;} }
+</style>
+</head>
+<body>
+<div class="top">
+  <img src="assets/goal-wordmark-white.png" alt="GOAL">
+  <div class="r">Riverbend Insurance Agency &middot; Performance Review</div>
+</div>
+<div class="wrap">
+  <div class="lead">
+    <div class="eb">Account Review &middot; June 11, 2026</div>
+    <h1>Performance reviews</h1>
+    <p>Two reports: Auto (MN) and Home (MN), covering June 2 &ndash; June 11, 2026.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="tag">Auto &middot; Minnesota</div>
+      <h3>Auto Performance Review</h3>
+      <p>1,626 shopper searches &middot; 21 leads &amp; calls &middot; 16 contacted &middot; 7 quoted &middot; $170.26 spend.</p>
+      <a class="btn" href="reports/auto-mn-performance-review.html">Open report &rarr;</a>
+    </div>
+
+    <div class="card">
+      <div class="tag">Home &middot; Minnesota</div>
+      <h3>Home Performance Review</h3>
+      <p>760 shopper searches &middot; 28 leads &amp; calls &middot; 22 contacted &middot; 8 quoted &middot; $372.43 spend.</p>
+      <a class="btn" href="reports/home-mn-performance-review.html">Open report &rarr;</a>
+    </div>
+  </div>
+
+  <div class="note">Reports are updated before each review and print cleanly to PDF.</div>
+</div>
+</body>
+</html>
